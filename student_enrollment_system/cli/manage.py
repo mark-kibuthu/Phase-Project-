@@ -367,14 +367,12 @@ def menu():
 
 @click.group()
 def cli():
-    """CLI for Student Enrollment System."""
     pass
 
 cli.add_command(initdb)
 
 @click.command(name='default')
 def default():
-    """Run the main menu."""
     menu()
 
 
